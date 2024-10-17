@@ -2,6 +2,13 @@
 
 Dependency for creating progressbars in QB-Core.
 
+# Reskinned PROGRESSBAR by VKT Development
+
+![Reskinned PROGRESSBAR](https://media.discordapp.net/attachments/1253360115894194239/1296547252667420683/image.png?ex=6712af39&is=67115db9&hm=596d309f4b11cbc8fd0e15053b34bfd5edd2b61f09dfa1a1187805d2ffe85462&=&format=webp&quality=lossless&width=1246&height=676)
+
+This is a reskinned version of the QB-Menu developed by VKT Development.
+
+
 # Usage
 
 ## QB-Core Functions
