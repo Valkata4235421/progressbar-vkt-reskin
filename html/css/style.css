@@ -1,0 +1,103 @@
+html {
+  overflow: hidden;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #74ebd5, #9face6) !important; /* Gradient background */
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+}
+
+.progress-container {
+  display: flex; /* Make it a flex container */
+  flex-direction: column; /* Stack items vertically */
+  z-index: 5;
+  color: #ffffff; /* Text color */
+  font-family: 'Roboto Condensed', sans-serif;
+  width: 500px; /* Width of the progress container */
+  position: fixed; /* Fixed positioning */
+  bottom: 7%; /* Adjusted distance from bottom */
+  left: 50%; /* Center horizontally */
+  transform: translateX(-50%); /* Center alignment */
+  gap: 10px; /* Space between items */
+  padding: 20px; /* Padding around the container */
+  background: none; /* No background for the container */
+  border-radius: 15px; /* Rounded corners */
+}
+
+.progress-labels {
+  display: flex; /* Flex for alignment */
+  align-items: center; /* Center align items vertically */
+  justify-content: space-between; /* Space between label and percentage */
+  width: 100%; /* Full width */
+  font-size: 1.9vh; /* Increased size for label text */
+}
+
+.label-with-icon {
+  display: flex; /* Flex display */
+  align-items: center; /* Center align icon and text */
+}
+
+.progress-bar-wrapper {
+  position: relative; /* Relative positioning for the icon */
+  width: 100%; /* Full width */
+  display: flex; /* Use flex to align items */
+  align-items: center; /* Center align items vertically */
+  background: #3f3e3e; /* Solid gray background */
+  border-radius: 50px; /* Rounded corners for the wrapper */
+}
+
+.progress-icon {
+  position: absolute; /* Absolute positioning for the icon */
+  left: -35px; /* Position it to the left of the progress bar */
+  top: -20px; /* Adjusted to move it slightly up in pixels */
+  animation: pulsate 1.7s infinite; /* Pulsating effect only */
+  font-size: 2.1vh; /* Size of the icon */
+  border-radius: 50%; /* Ensure the icon is circular */
+  overflow: hidden; /* Hide overflow to avoid shadow outside */
+}
+
+/* Pulsating animation */
+@keyframes pulsate {
+  0% {
+    transform: scale(1); /* Original size */
+  }
+  50% {
+    transform: scale(1.4); /* Scale up */
+  }
+  100% {
+    transform: scale(1); /* Return to original size */
+  }
+}
+
+.progress-bar {
+  background: linear-gradient(135deg, rgba(10, 20, 80, 0.9), rgba(30, 60, 140, 0.85), rgba(45, 120, 200, 0.8), rgba(70, 170, 255, 0.75)); /* Gradient background */
+  width: 0%; /* Default width set to 0% */
+  height: 1.1vh; /* Set height for progress bar */
+  transition: width 0.2s ease-out, box-shadow 0.2s ease-out; /* Quick transition for both width and glow */
+  border-radius: 50px; /* Rounded corners */
+  box-shadow: 0 0 15px rgba(70, 170, 255, 0.75); /* Glow effect matching the lightest gradient color */
+}
+
+.progress-percentage {
+  flex-shrink: 0; /* Prevent percentage from shrinking */
+}
+
+.progress-bar-wrapper:hover .progress-bar {
+  box-shadow: 0 0 25px rgba(108, 190, 226, 0.8); /* Stronger glow on hover */
+}
+
+.progress-bar-adit-info {
+  display: none; /* Hidden by default */
+  position: relative;
+  width: 100%; /* Full width */
+  text-align: center; /* Center text */
+  font-size: 1.5vh; /* Font size */
+  font-style: italic; /* Italic text */
+  color: rgba(255, 0, 0, 0.8); /* Warning color */
+}
