@@ -2,7 +2,7 @@
 
 Dependency for creating progressbars in QB-Core.
 
-https://iili.io/22ytCAB.png
+![Reskinned progressbar](https://iili.io/22ytCAB.png)
 
 # Usage
 
