@@ -2,6 +2,8 @@
 
 Dependency for creating progressbars in QB-Core.
 
+https://iili.io/22ytCAB.png
+
 # Usage
 
 ## QB-Core Functions
